@@ -2,20 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 function Works() {
-    // Animation variants for the numbered steps
     const stepVariants = {
         hidden: { opacity: 0, scale: 0 },
         visible: (i) => ({
             opacity: 1,
             scale: 1,
             transition: {
-                delay: i * 0.5, // Delay each step
-                duration: 0.5,  // Animation duration
-                type: 'spring', // Smooth spring animation
+                delay: i * 0.5, 
+                duration: 0.5,  
+                type: 'spring', 
             },
         }),
     };
-
     return (
         <div>
             <section id="works" className="relative bg-gray-900 py-10 sm:py-16 lg:py-24">

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-// import './Home.css'; // Ensure you have this CSS file for the background
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import imag2 from "../image/imag2.png";
+// import imag3 from "../image/imag1.png";
 const Home = () => {
   const [text] = useTypewriter({
     words: ['Hey 👋 I am Jenny Carter'],
@@ -10,9 +11,9 @@ const Home = () => {
     deleteSpeed: 50,
     delaySpeed: 1000,
   });
-
   return (
-    <section className="home-section my-10">
+   <div>
+     <section className="home-section">
       <section className="pt-10 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16" id="Home">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid items-center grid-cols-1 md:grid-cols-2">
@@ -29,12 +30,10 @@ const Home = () => {
                 <span className="relative inline-block">
                   <span className="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300 dark:bg-gray-900"></span>
                 </span>
-                <button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">GET STARTED</button>
-
+                <button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">GET STARTED <span className='mx-1'><ArrowForwardIcon/></span></button>
 
               </p>
             </div>
-
             <div className="relative animate-slide-in-right">
               <img className="absolute inset-x-0 bottom-0 -mb-48 -translate-x-1/2 left-1/2" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg" alt="" />
               <img className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110" src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/business-woman.png" alt="" />
@@ -43,6 +42,7 @@ const Home = () => {
         </div>
       </section>
     </section>
+   </div>
   );
 };
 

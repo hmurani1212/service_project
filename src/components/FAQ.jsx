@@ -2,12 +2,9 @@ import React, { useState } from 'react';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-
   const toggleAccordion = (index) => {
-    // Toggle the active accordion item
     setActiveIndex(activeIndex === index ? null : index);
   };
-
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

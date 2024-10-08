@@ -1,6 +1,42 @@
-import React from 'react';
-
+import React, {useState} from 'react';
+import axios from 'axios';
 const Contact = () => {
+  const [email, setemail] = useState("");
+  const [subject, setsubject] = useState("");
+  const [message, setmessage] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (email.length === 0) {
+      return alert("Please enter an email");
+    }
+  
+    // Subject validation
+    if (subject.length === 0) {
+      return alert("Please enter a subject");
+    }
+  
+    // Message validation
+    if (message.length === 0) {
+      return alert("Please enter a message");
+    }
+    try {
+      const response = await axios.post("http://localhost:5040/api/send_email", {
+        email,       
+        subject,     
+        message     
+      });
+
+      if (response.status === 200) {
+        alert("Message sent successfully!");
+      } else {
+        alert("Failed to send the message.");
+      }
+
+    } catch (error) {
+      console.error("Error sending message:", error);
+      alert("Error: Could not send the message. Try again later.");
+    }
+  };
   return (
     <section className="contact-section">
       <div className="mt-6 max-w-6xl max-lg:max-w-3xl mx-auto bg-[#2e0249] rounded-lg">
@@ -142,30 +178,30 @@ const Contact = () => {
       </div>
       <form className="mt-8 space-y-4">
         <input
-          type="text"
+          type="text" 
           placeholder="Name"
           className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]"
         />
         <input
-          type="email"
+          type="email" value={email} onChange={(e) =>setemail(e.target.value)}
           placeholder="Email"
           className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]"
         />
         <input
           type="text"
-          placeholder="Subject"
+          placeholder="Subject" value={subject} onChange={(e) =>setsubject(e.target.value)}
           className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]"
         />
         <textarea
           placeholder="Message"
-          rows={6}
+          rows={6}   value={message} onChange={(e) =>setmessage(e.target.value)}
           className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-[#a91079]"
           defaultValue={""}
         />
         <button
           type="button"
           className="text-white bg-[#a91079] hover:bg-[#a91079e2] tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6"
-        >
+          onClick={handleSubmit}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16px"

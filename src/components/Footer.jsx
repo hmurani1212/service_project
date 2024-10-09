@@ -3,7 +3,7 @@ function Footer() {
   return (
     <div>
         <footer>
-  <div className="bg-gray-800 py-4 text-gray-400 my-20">
+  <div className="bg-gray-800 py-4 text-gray-400 mt-20">
     <div className="container px-4 mx-auto">
       <div className="-mx-4 flex flex-wrap justify-between">
         <div className="px-4 my-4 w-full xl:w-1/5">
@@ -34,7 +34,7 @@ function Footer() {
                     fontWeight="bold"
                   >
                     <tspan x={654} y={518}>
-                      Tailwindow
+                    RAAQUATECH
                     </tspan>
                   </text>
                 </g>
@@ -42,10 +42,7 @@ function Footer() {
             </svg>
           </a>
           <p className="text-justify">
-            Tailwindow is a collection of UI Components created using Tailwind
-            CSS Framework. The UI Components gives you all of the building
-            blocks you need to build any designs without any annoying
-            opinionated styles you have to fight to override.
+          AAQUATECH is a cutting-edge IT solutions provider dedicated to empowering businesses with innovative technology.
           </p>
         </div>
         <div className="px-4 my-4 w-full sm:w-auto">
@@ -86,27 +83,22 @@ function Footer() {
           <ul className="leading-8">
             <li>
               <a href="#" className="hover:text-blue-400">
-                Getting Started With HTML and CSS
+              Stay updated with the latest trends 
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-blue-400">
-                What Is Flex And When to Use It?
+              and insights in the IT industry.
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-blue-400">
-                How TailwindCSS Can Help Your Productivity?
+              Discover best practices and expert
               </a>
             </li>
             <li>
               <a href="#" className="hover:text-blue-400">
-                5 Tips to Make Responsive Website
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-blue-400">
-                See More
+              tips to enhance your business operations.
               </a>
             </li>
           </ul>
@@ -181,14 +173,14 @@ function Footer() {
       </div>
     </div>
   </div>
-  <div className="bg-indigo-700 py-4 text-gray-100">
+  <div className="bg-blue-300 py-4 text-[rgb(69, 154, 185)">
     <div className="container mx-auto px-4">
       <div className="-mx-4 flex flex-wrap justify-between">
         <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-          Copyright © 2020 - 2022 Tailwindow. All Rights Reserved.
+          Copyright © 2020 - 2024 RAAQUATECH. All Rights Reserved.
         </div>
         <div className="px-4 w-full text-center sm:w-auto sm:text-left">
-          Made with ❤️ by Tailwindow.
+          Made with ❤️ by Hassan(MERN STACK developER).
         </div>
       </div>
     </div>

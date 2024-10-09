@@ -19,7 +19,7 @@ body {
 
 .navbar {
   height: 60px;
-  background-color: #7e7d7a;
+  background-color: rgba(69, 154, 185, 0.2);
   width: 100%;
   /* top: 0; */
   z-index: 1000;

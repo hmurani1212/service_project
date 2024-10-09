@@ -16,13 +16,13 @@ function Works() {
     };
     return (
         <div>
-            <section id="works" className="relative bg-gray-900 py-10 sm:py-16 lg:py-24">
+            <section id="works" className="relative py-10 sm:py-16 lg:py-24" style={{ backgroundColor: '#459ab9' }}>
                 <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto text-center">
                         <h2 className="text-4xl text-white font-extrabold mx-auto md:text-6xl lg:text-5xl">
                             How does it work?
                         </h2>
-                        <p className="max-w-2xl mx-auto mt-4 text-base text-gray-400 leading-relaxed md:text-2xl">
+                        <p className="max-w-2xl mx-auto mt-4 text-base text-white leading-relaxed md:text-2xl">
                             Our AI solution will help you from start to finish
                         </p>
                     </div>
@@ -54,14 +54,14 @@ function Works() {
                                         <span className="text-xl font-semibold text-gray-700">{step}</span>
                                     </div>
                                     <h3 className="mt-6 text-xl text-white font-semibold leading-tight md:mt-10">
-                                        {step === 1 ? 'Select template' : step === 2 ? 'Enter Your Details' : 'Publish it'}
+                                        {step === 1 ? 'Understanding Your Needs:' : step === 2 ? 'Customized Solutions:' : 'Development and Implementation'}
                                     </h3>
-                                    <p className="mt-4 text-base text-gray-400 md:text-lg">
+                                    <p className="mt-4 text-base text-white md:text-lg">
                                         {step === 1
-                                            ? 'Select template according to your requirement'
+                                            ? 'We begin by engaging with you to understand your business goals, challenges, and specific requirements.'
                                             : step === 2
-                                            ? 'Put in your personalized details and let the AI do the rest.'
-                                            : 'Use output as you like'}
+                                            ? 'Based on the information gathered, we develop tailored service packages that address your unique objectives.'
+                                            : 'Once the plan is in place, our expert team gets to work.'}
                                     </p>
                                 </motion.div>
                             ))}

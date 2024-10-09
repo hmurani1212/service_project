@@ -54,7 +54,7 @@ function Team() {
         {data.map((d, index) => (
           <div key={index} className="grid grid-cols-2 md:grid-cols-3 gap-4 mx-auto">
             <div className="">
-              <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ml-6">
+              <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 md:ml-6">
                 <img className="rounded-t-lg h-80 w-full" src={d.img} alt="" />
                 <div className="p-5">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

@@ -17,7 +17,7 @@ const Home = () => {
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid items-center grid-cols-1 md:grid-cols-2">
               <div>
-                <h2 className="text-3xl font-bold leading-tight  text-white dark:text-white sm:text-lg lg:text-3xl h-20" style={{ color: "#D3D3D3" }}>
+              <h2 className="text-3xl font-bold leading-tight text-white dark:text-white sm:text-sm lg:text-3xl sm:h-28 md:h-20" style={{ color: "#D3D3D3" }}>
                   {text} <Cursor />
                 </h2>
                 <p className="max-w-lg mt-3 text-base leading-relaxed  font-bold md:mt-8" style={{ color: "#D3D3D3" }}>

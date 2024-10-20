@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div id="home">
+      <div id="home ">
         <Home />
       </div>
       <div id='service'>
@@ -24,9 +24,9 @@ function App() {
       <div id='Team'>
         <Team/>
       </div>
-      <div id='Testimonial'>
+      {/* <div id='Testimonial'>
         <Testimonial/>
-      </div>
+      </div> */}
       <div id='FAQ'>
         <FAQ/>
       </div>

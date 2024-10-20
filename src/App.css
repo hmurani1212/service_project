@@ -7,9 +7,14 @@ body {
   background-color: #fcfcfc;
 }
 
+
+.margin{
+  margin-top: 10px !important;
+}
+
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+
   /* padding: 0 10px; */
   display: flex;
   justify-content: space-between;
@@ -18,13 +23,14 @@ body {
 }
 
 .navbar {
-  height: 60px;
+  height: 70px;
   background-color: rgba(69, 154, 185, 0.2);
   width: 100%;
   /* top: 0; */
   z-index: 1000;
   transition: background-color 0.3s ease, top 0.3s ease; /* Smooth transition */
   position: fixed;
+  padding:0 20px;
 }
 
 .navbar.scrolled {
@@ -54,7 +60,9 @@ body {
 .nav-elements ul {
   display: flex;
   justify-content: space-between;
+  
   list-style-type: none;
+  
 }
 
 .nav-elements ul li:not(:last-child) {
@@ -98,7 +106,7 @@ body {
   }
   #Home{
     position: relative;
-    top: 20px;
+    
   }
   .nav-elements {
     position: absolute;
@@ -107,7 +115,7 @@ body {
     background-color: #050505;
     color: white;
     width: 0px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     transition: all 0.3s ease-in;
     overflow: hidden;
   }

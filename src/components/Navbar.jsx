@@ -46,17 +46,17 @@ const Navbar = () => {
             {fisrtName && <Navbarsmall />} {/* Small navbar at the top */}
 
             {/* Main Navbar */}
-            <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+            <nav className={`navbar   mb-10 ${scrolled ? 'scrolled' : ''}`}>
                 <div className="container">
                     <div className="logo flex">
-                        <h1>RAAQATECH</h1>
-                        <img src={image} className='w-20 h-20' alt='company_logo'></img>
+                        <h1 className='hidden sm:flex'>RAAQATECH</h1>
+                        <img src={image} className='w-24 p-2 h-20' alt='company_logo'></img>
 
                     </div>
                     <div className="menu-icon" onClick={handleShowNavbar}>
                         <span><MenuIcon style={{ color: "white" }} /></span>
                     </div>
-                    <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
+                    <div className={`nav-elements  ${showNavbar ? "active" : ""}`}>
                         <ul>
                             <li>
                                 <Link
@@ -102,7 +102,7 @@ const Navbar = () => {
                                     Team
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link
                                     to="Testimonial"
                                     spy={true}
@@ -111,6 +111,17 @@ const Navbar = () => {
                                     duration={500}
                                 >
                                     Testimonial
+                                </Link>
+                            </li> */}
+                            <li>
+                                <Link
+                                    to="FAQ"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-70}
+                                    duration={500}
+                                >
+                                    FAQ
                                 </Link>
                             </li>
                             <li>
@@ -122,17 +133,6 @@ const Navbar = () => {
                                     duration={500}
                                 >
                                     Contact
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    to="FAQ"
-                                    spy={true}
-                                    smooth={true}
-                                    offset={-70}
-                                    duration={500}
-                                >
-                                    FAQ
                                 </Link>
                             </li>
                         </ul>

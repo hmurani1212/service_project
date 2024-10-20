@@ -11,13 +11,13 @@ const Home = () => {
     delaySpeed: 1000,
   });
   return (
-    <div>
-      <section className="home-section">
-        <section className="pt-10 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16" id="Home">
+    <div className=''>
+      <section className="">
+        <section className="pt-20 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-20 2xl:pt-16" id="Home">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid items-center grid-cols-1 md:grid-cols-2">
               <div>
-              <h2 className="text-3xl font-bold leading-tight text-white dark:text-white sm:text-sm lg:text-3xl sm:h-28 md:h-20" style={{ color: "#D3D3D3" }}>
+              <h2 className="text-3xl font-bold leading-tight text-white dark:text-white  sm:text-sm lg:text-3xl sm:h-28 md:h-20" style={{ color: "#D3D3D3" }}>
                   {text} <Cursor />
                 </h2>
                 <p className="max-w-lg mt-3 text-base leading-relaxed  font-bold md:mt-8" style={{ color: "#D3D3D3" }}>

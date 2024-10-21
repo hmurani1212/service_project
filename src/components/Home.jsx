@@ -10,10 +10,9 @@ const Home = () => {
     deleteSpeed: 50,
     delaySpeed: 1000,
   });
+
   return (
     <div>
-      <section 
-      >
         <section className="pt-20 overflow-hidden bg-gray-50 dark:bg-gray-800 md:pt-0 sm:pt-20 2xl:pt-16" id="Home">
           <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid items-center grid-cols-1 md:grid-cols-2">
@@ -46,8 +45,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-      </section>
-      
+      {/* </section> */}
     </div>
   );
 };
